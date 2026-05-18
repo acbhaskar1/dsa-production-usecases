@@ -21,3 +21,12 @@ Here are the optimized implementations demonstrating the core trade-offs between
 ### Approach 1: Hash Map Solution (Optimized for Speed)
 * **Time Complexity:** $O(n)$ — Single pass lookup.
 * **Space Complexity:** $O(n)$ — Stores elements in memory.
+
+### Approach 2: Two-Pointer Solution (Optimized for Memory)
+* **Time Complexity:** $O(n \log n)$ due to sorting (or $O(n)$ if pre-sorted).
+* **Space Complexity:** $O(1)$ — Constant auxiliary space.
+
+## 📈 Key Engineering Takeaways
+* **Trade-offs Matter:** When memory is premium (embedded systems/edge caching), the Two-Pointer technique wins. When execution speed is critical (real-time high-throughput streams), the Hash Map approach is preferred.
+
+* **Algorithmic Scaling:** This logic fundamentally serves as the building block for higher-order matching challenges like 3Sum, 4Sum, and Prefix-Sum subarray patterns.
